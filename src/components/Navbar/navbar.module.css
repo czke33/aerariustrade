@@ -3,14 +3,26 @@
   background-color: #990000;
   width: 100%;
 }
-.logo {
-  display: contents;
+.logopic {
+  width: 100px;
+  /*background-image: url(./src/images/logominta1.jpg);*/
 }
-.list {
+.links {
   display: flex;
-  width: 400px;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-right: 20px;
   align-items: center;
   list-style: none;
+  color: white;
+}
+.linkcontainer li {
+  cursor: pointer;
+  margin: 20px;
+  color: white;
+  font-style: normal;
+}
+.linkcontainer li:hover {
+  color: black;
 }
