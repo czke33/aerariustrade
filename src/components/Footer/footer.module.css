@@ -1,11 +1,152 @@
-.footer {
-  background-color: #990000;
+:root {
+  --footer-text-color: #fff;
+  --footer-background-color: #990000;
+}
+/*--syles canceling--*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/*--Mobile--*/
+.footercontainer {
+  background-color: var(--footer-background-color);
   width: 100%;
-  height: 100px;
+  height: 300px;
+  box-sizing: content-box;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footersection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.footerlogo {
+  width: 200px;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+}
+.telephone {
+  display: flex;
+  flex-direction: row;
+  width: 210px;
+  height: 20px;
+  align-items: center;
   justify-content: center;
 }
-.footerlinksitems {
+.socialicontel {
+  background-image: url("../../images/icons/icons.svg#telephone");
+}
+
+.addressfooter {
   display: flex;
-  font-size: medium;
+  width: 300px;
+}
+
+.socialellipse {
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+  border-radius: 50%;
+}
+.socialicon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #5e6265;
+  background-color: var(--footer-background-color);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.icon {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  fill: #fff;
+}
+.socialicon:hover {
+  background-color: #5e6265;
+}
+.lastrow {
+  color: #5e6265;
+}
+.lastrow:hover {
+  color: black;
+}
+.lastrow p {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 20px;
+}
+/*--Tablet--*/
+@media screen and (min-width: 768px) {
+  .footercontainer {
+    width: 100%;
+    height: 300px;
+  }
+  .footersection {
+    padding: 20px 32px 20px 32px;
+    width: 100%;
+  }
+  .firstrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .socialellipse {
+    padding-right: 1px;
+  }
+}
+/*--Desktop--*/
+@media screen and (min-width: 1280px) {
+  .footercontainer {
+    width: 100%;
+    height: 300px;
+    padding: 60px 60px 20px 60px;
+  }
+  .firstrow {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sociallinksfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 }
